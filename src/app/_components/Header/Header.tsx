@@ -16,8 +16,8 @@ function Header() {
         <div className="flex-1 md:ml-0 md:flex-none">
           <Link href="/">
             <div className="text-center">
-              <span className="text-primary text-[40px] font-bold">H</span>
-              <span className="text-[30px] font-medium">Shop</span>
+              <span className="text-primary text-[40px] font-bold">A</span>
+              <span className="text-[30px] font-medium">Store</span>
             </div>
           </Link>
         </div>

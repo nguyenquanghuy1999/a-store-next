@@ -11,25 +11,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ecommerce-platform-delta-one.vercel.app"),
-  title: "HShop - Điện thoại, laptop, tablet, phụ kiện chính hãng",
+  // metadataBase: new URL("https://ecommerce-platform-delta-one.vercel.app"),
+  title: "AStore - Điện thoại, laptop, tablet, phụ kiện chính hãng",
   description:
-    "Mua sắm trực tuyến các sản phẩm công nghệ. Giá tốt & Miễn phí vận chuyển. Voucher Xtra | Freeship 0Đ | HShop Đảm Bảo",
-  applicationName: "HShop",
+    "Mua sắm trực tuyến các sản phẩm công nghệ. Giá tốt & Miễn phí vận chuyển. Voucher Xtra | Freeship 0Đ | AStore Đảm Bảo",
+  applicationName: "AStore",
   openGraph: {
     type: "website",
-    siteName: "HShop",
+    siteName: "AStore",
     locale: "vi_VN",
   },
   robots: {
     index: true,
     follow: true,
   },
-  verification: { google: "Bq1Km_TdPQywzZGcl3uq16Znhoeu-3ULxyqMWN5UmUQ" },
+  // verification: { google: "Bq1Km_TdPQywzZGcl3uq16Znhoeu-3ULxyqMWN5UmUQ" },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "HShop",
+    title: "AStore",
   },
 };
 

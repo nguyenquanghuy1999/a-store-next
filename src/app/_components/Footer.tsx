@@ -5,7 +5,7 @@ import { MdMail } from "react-icons/md";
 const sections = [
   {
     id: 1,
-    title: "HShop",
+    title: "AStore",
     items: [
       {
         content: "Địa chỉ",
@@ -80,7 +80,7 @@ export default function Footer() {
         ))}
       </div>
       <p className="mt-7.5 border-t border-[#373a43] py-5 text-center">
-        © Copyright HShop
+        © Copyright AStore
       </p>
     </div>
   );
