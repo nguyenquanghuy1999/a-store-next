@@ -10,8 +10,10 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://ecommerce-platform-delta-one.vercel.app"),
+  metadataBase: new URL(`${BASE_URL}`),
   title: "AStore - Điện thoại, laptop, tablet, phụ kiện chính hãng",
   description:
     "Mua sắm trực tuyến các sản phẩm công nghệ. Giá tốt & Miễn phí vận chuyển. Voucher Xtra | Freeship 0Đ | AStore Đảm Bảo",
@@ -37,9 +39,26 @@ export const viewport: Viewport = {
   themeColor: "white",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "AStore",
+    url: `${BASE_URL}`,
+  };
+
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="vi" className={`${inter.variable} h-full antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="flex min-h-full flex-col">
         <Header />
         <div className="mt-20 min-h-screen px-2.5 md:mt-30.5 md:px-12.5 lg:px-17.5 xl:px-25">
