@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  // verification: { google: "Bq1Km_TdPQywzZGcl3uq16Znhoeu-3ULxyqMWN5UmUQ" },
+  verification: { google: "Bq1Km_TdPQywzZGcl3uq16Znhoeu-3ULxyqMWN5UmUQ" },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
